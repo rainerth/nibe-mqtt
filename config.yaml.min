@@ -1,0 +1,78 @@
+logging:
+  level: INFO
+  format: "%(asctime)s - %(levelname)-8s - %(threadName)-10s - %(name)s - %(message)s"
+mqtt:
+  host: 172.30.2.6
+  port: 1883
+  protocol: 5
+nibe:
+  model: S1256
+  word_swap: true
+  modbus:
+    url: tcp://NIBE-06571123352007.web-me.local:502
+    slave_id: 1
+  poll:
+    interval: 30
+    coils:
+      - current-outdoor-temperature-bt1-30002
+      - supply-line-ep23-bt2-30003
+      - supply-line-ep22-bt2-30004
+      - supply-line-ep21-bt2-30005
+      - supply-line-bt2-30006
+      - return-line-bt3-30008
+      - hot-water-top-bt7-30009
+      - hot-water-charging-bt6-30010
+      - brine-in-bt10-30011
+      - brine-out-bt11-30012
+      - condenser-bt12-30013
+      - discharge-bt14-30014 
+      - external-supply-line-bt25-30040
+      - external-cooling-supply-temperature-bt25-30120
+      - generated-power-eb101-30407
+      - generated-power-eb108-f21x0-30767
+      - generated-power-eb107-f21x0-30792
+      - generated-power-eb106-30817
+      - generated-power-eb105-30842
+      - generated-power-eb104-30867
+      - generated-power-eb103-30892
+      - generated-power-eb102-30917
+      - power-internal-additional-heat-31028
+      - compressor-power-input-31049
+      - compressor-power-input-average-31076
+      - power-eb107-ep15-31716
+      - power-eb107-ep14-31723
+      - power-eb106-ep15-31730
+      - power-eb106-ep14-31737
+      - power-eb105-ep15-31744
+      - power-eb105-ep15-31751
+      - power-eb103-ep14-31779
+      - power-eb102-ep15-31786
+      - power-eb102-ep14-31793
+      - power-eb101-ep15-31800
+      - power-eb101-ep14-31807
+      - power-eb100-ep15-31814
+      - power-eb100-ep14-31821
+      - current-power-eme-20-32177
+      - total-average-power-eme-20-32179
+      - current-power-32728
+      - power-at-dot-manual-value-44201
+      - eme20-api-available-power-42110
+      - instantaneous-used-power-32167
+      - energy-log-current-power-consumption-32306
+      - energy-log-current-power-consumption-components-32409
+      - immersion-heater-power-emergency-mode-43029
+      - operating-mode-sg-ready-31912
+      - sg-ready-input-a-31913
+      - sg-ready-input-b-31914
+      - heat-pump-1-requested-compressor-frequency-30302
+      - heat-pump-2-requested-compressor-frequency-30301
+      - active-heat-pumps-31125
+      - brine-pump-eb100-31534
+      - holiday-function-status-40020
+      - hot-water-circulation-gp11-31064
+      - hot-water-circulation-42755
+      - speed-of-circulation-pump-for-hot-water-40218
+      - speed-circulation-pump-standby-mode-eb100-40843
+    
+      
+
